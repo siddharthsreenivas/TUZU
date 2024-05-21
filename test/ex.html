@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style> 
+.button {
+
+  border: none;
+  cursor: pointer;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  background-color: rgb(0, 0, 0); 
+  color: rgb(239, 239, 16); 
+  border: 1px solid #e1ee29;
+  border-radius: 40px;
+  font-weight:bold;
+  transition: all 0.5s ease 0s;
+}
+
+.button1:hover {
+  background-color: #e9ed15;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight:bold;
+  border: none;
+  border: 1px solid #d3df2a;
+}
+
+/*second button effect*/
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ani{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 46px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  border: 3px solid rgb(221, 237, 35);
+  color: rgb(230, 241, 21);
+  font-size: 20px;
+  font-family: arial;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all .35s;
+  font-weight: bold;
+}
+
+.ani:before,
+.ani:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: rgb(208, 232, 28);
+  z-index: -1;
+  transition: all .35s;
+}
+
+.ani:before{
+  opacity: .5;
+}
+
+.ani:after{
+  transition-delay: .2s;
+}
+
+.ani:hover{
+  color: #000000;
+}
+
+.ani:hover:before,
+.ani:hover:after{
+  left: 0;
+}
+
+</style>
+</head>
+<body>
+<button class="button button1">Generate -></button> 
+
+<br>
+<br>
+
+<div class="wrapper">
+  <a class="ani" href="#">Hover Me!</a>
+</div>
+ 
+
+
+</body>
+</html>

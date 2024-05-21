@@ -1,0 +1,7 @@
+#scrolling animation
+
+https://www.youtube.com/watch?v=0kmFlBJIUkQ
+
+https://github.com/michalsnik/aos
+
+https://www.youtube.com/watch?v=VplDlwLTR50

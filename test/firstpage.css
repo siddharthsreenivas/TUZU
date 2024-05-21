@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  h1 {
+     font-size: calc(18px + (32 - 18) * ((100vw -300px) / (1600 -300)));
+  }
+  
+  .info-box {
+     background-color: rgba(255,255,255,.8);
+     color: black;
+     max-width:800px; 
+     margin:auto; 
+     padding:20px; 
+     border-radius :10px; 
+  }
+  
+  button {
+     background-color:#FFD700; 
+     color:black; 
+     border:none; 
+     padding :10px ; 
+  }
+  

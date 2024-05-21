@@ -1,0 +1,9 @@
+
+.ab-grnd{
+    background: rgb(32,32,32);
+    background: radial-gradient(circle, rgba(32,32,32,0.1517857142857143) 0%, rgba(115,115,115,0.1517857142857143) 50%, rgba(12,192,223,0.14898459383753504) 100%);
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
