@@ -6,9 +6,17 @@
 
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #202020;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .bg-base{
@@ -38,7 +46,21 @@ body{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+.navbar{
+  background: radial-gradient(circle, #2d2d2d, #202020) !important;
+  transition: all 0.5s;
+  
+}
+
+.navbar-scrolled{
+  /* background: rgba(0, 0, 0, 0.5) !important;  */
+  backdrop-filter: blur(4px) !important;
+  transition: 0.5s;
+  background: radial-gradient(circle, #2d2d2dbd, #202020b6)  !important;
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -88,8 +110,6 @@ a{
 .box1{
   /*background-color: #0CC0DF;*/
   border-radius: 30px;
-  
-  
 }
 
 .box2{
@@ -123,7 +143,7 @@ a{
   width: max-content;
   border: 3px solid #fef1017f;
   width: 50%;
-
+  cursor: pointer;
 }
 
 
@@ -157,4 +177,40 @@ a{
   font-stretch: ultra-expanded;
   letter-spacing: 8px;
 
+}
+
+.modal-dialog{
+  max-width: 55% !important;
+}
+.modal-content{
+  background-color: #2d2d2d !important;
+  padding: 20px 93px;
+  border-radius: 15px !important;
+}
+.modal-header{
+  border: none !important;
+  padding: 10px 0 !important;
+}
+
+.modal-title{
+  width: 100%;
+  text-align: center;
+}
+
+.modal-heading{
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.modal-body{
+  width: 100%;
+}
+
+.footer-link{
+  color: white;
+}
+
+.footer-link:hover{
+  color: rgb(128, 196, 201);
 }
