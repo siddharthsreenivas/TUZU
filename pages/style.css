@@ -214,3 +214,7 @@ a{
 .footer-link:hover{
   color: rgb(128, 196, 201);
 }
+
+.text-content p {
+  padding-left: 20px;
+}
